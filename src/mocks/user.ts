@@ -1,6 +1,6 @@
 export const user = {
     name: "Алексей Петров",
-    avatar: "https://i.pravatar.cc/200?img=12",
+    avatar: "../assets/img/avatar.jpg",
     level: 12,
     xp: 850,
     nextLevelXp: 1000,
