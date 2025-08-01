@@ -1,5 +1,51 @@
-# Vue 3 + TypeScript + Vite
+# 🚀 Learning Profile
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Learning Profile** is a gamified Progressive Web App (PWA) built with Vue 3 and TypeScript. It displays a user's learning progress, level, skills, achievements, and recent activities in an interactive and mobile-friendly interface.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## 📸 Preview
+
+![Learning Profile Preview](assets/input.gif)
+
+---
+
+## 🎯 Purpose
+
+This project simulates a personal learning dashboard with gamification elements, designed to showcase frontend skills including Vue 3 component architecture, Pinia state management, and PWA support using Vite.
+
+---
+
+## ✨ Features
+
+- 👤 User profile view (name, avatar, level, XP)
+- 📈 Progress bar showing XP progress
+- 🏆 Achievement system with interactive hover effects:
+  - **Beginner** – for registering
+  - **Persistent** – for completing 5+ courses
+  - **Expert** – for having 10+ skills
+- 📅 Recent activity list (mock data)
+- 📲 Full PWA support:
+  - Add to home screen
+  - Offline caching
+  - Manifest & service worker
+- 📱 Responsive design for all screen sizes
+- ⚙️ Built with TypeScript and modular composables
+
+---
+
+## 🛠️ Technologies Used
+
+| Tech            | Purpose                       |
+| --------------- | ----------------------------- |
+| Vue 3           | UI Framework                  |
+| TypeScript      | Static Typing                 |
+| Pinia           | State Management              |
+| Vite            | Fast Build Tool               |
+| Vite PWA Plugin | PWA Manifest & Service Worker |
+| CSS Flex/Grid   | Layout and responsiveness     |
+| Vue Transition  | Smooth animations             |
+
+---
+
+## 📁 Project Structure
