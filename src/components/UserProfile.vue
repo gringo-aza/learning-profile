@@ -1,13 +1,13 @@
 <template>
   <div class="user-profile">
-    <img :src="user.avatar" class="avatar" />
+    <img :src="user.avatar" class="avatar" alt="User Avatar" />
     <h2>{{ user.name }}</h2>
     <p>Level {{ user.level }} ({{ user.xp }}/{{ user.nextLevelXp }} XP)</p>
   </div>
 </template>
 <script setup lang="ts">
-import { useUserStore } from '../stores/userStore'
-const user = useUserStore()
+import { useUserStore } from "../stores/userStore";
+const user = useUserStore();
 </script>
 <style scoped>
 .user-profile {
@@ -49,6 +49,4 @@ p {
   color: #004d40;
   font-weight: 500;
 }
-
-
 </style>
