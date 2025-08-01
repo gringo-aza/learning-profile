@@ -1,12 +1,13 @@
 <template>
   <div class="user-profile">
-    <img :src="user.avatar" class="avatar" alt="User Avatar" />
+    <img :src="avatar" class="avatar" alt="User Avatar" />
     <h2>{{ user.name }}</h2>
     <p>Level {{ user.level }} ({{ user.xp }}/{{ user.nextLevelXp }} XP)</p>
   </div>
 </template>
 <script setup lang="ts">
 import { useUserStore } from "../stores/userStore";
+import avatar from "../assets/img/avatar.jpg";
 const user = useUserStore();
 </script>
 <style scoped>
