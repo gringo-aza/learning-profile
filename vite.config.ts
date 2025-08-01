@@ -43,21 +43,6 @@ export default defineConfig({
             purpose: 'maskable',
           },
         ],
-        screenshots: [
-          {
-            src: "/screenshots/homepage.png",
-            sizes: "640x1136",
-            type: "image/png",
-            form_factor: "narrow"
-          },
-          {
-            src: "/screenshots/dashboard.png",
-            sizes: "1280x720",
-            type: "image/png",
-            form_factor: "wide"
-          }
-        ],
-
       },
       workbox: {
         navigateFallback: '/offline.html',
