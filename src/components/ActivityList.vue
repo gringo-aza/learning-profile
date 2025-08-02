@@ -1,13 +1,11 @@
 <template>
   <div class="activity-container">
-    <!-- Loader -->
     <template v-if="loading">
       <div class="activity-grid">
         <SkeletonCard v-for="n in 10" :key="n" />
       </div>
     </template>
 
-    <!-- Activity Cards with Transition -->
     <TransitionGroup name="fade" tag="div" class="activity-grid" v-else>
       <div
         v-for="activity in filteredActivities"
