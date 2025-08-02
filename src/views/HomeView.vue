@@ -30,9 +30,9 @@ import { ref } from "vue";
 
 const activeFilter = ref("Все");
 
-function onFilterChange(value: string) {
+const onFilterChange = (value: string) => {
   activeFilter.value = value;
-}
+};
 </script>
 
 <style scoped>

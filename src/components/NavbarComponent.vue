@@ -30,10 +30,10 @@ const emit = defineEmits<{
   (e: "update:filter", value: string): void;
 }>();
 
-function selectFilter(filter: string) {
+const selectFilter = (filter: string) => {
   activeFilter.value = filter;
   emit("update:filter", filter);
-}
+};
 </script>
 
 <style scoped>

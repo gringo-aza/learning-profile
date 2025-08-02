@@ -11,6 +11,10 @@ import useXpSystem from "../composables/useXpSystem";
 const { progress } = useXpSystem();
 const displayProgress = ref(0);
 
+watch(progress, (newVal) => {
+  displayProgress.value = newVal;
+});
+
 onMounted(() => {
   const duration = 1000; // 1 soniya
   const intervalTime = 20; // har 20ms da yangilanish
@@ -28,10 +32,6 @@ onMounted(() => {
       }, 500); // 0.5s kutish
     }
   }, intervalTime);
-});
-
-watch(progress, (newVal) => {
-  displayProgress.value = newVal;
 });
 </script>
 

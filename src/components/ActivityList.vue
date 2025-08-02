@@ -47,22 +47,16 @@ const filteredActivities = computed(() => {
   });
 });
 
-onMounted(() => {
-  setTimeout(() => {
-    loading.value = false;
-  }, 1500);
-});
-
-function formatDate(dateStr: string): string {
+const formatDate = (dateStr: string): string => {
   const date = new Date(dateStr);
   return date.toLocaleDateString("ru-RU", {
     day: "2-digit",
     month: "long",
     year: "numeric",
   });
-}
+};
 
-function getBadges(xp: number) {
+const getBadges = (xp: number) => {
   if (xp >= 100) {
     return [
       {
@@ -85,7 +79,13 @@ function getBadges(xp: number) {
       },
     ];
   } else return [];
-}
+};
+
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 1500);
+});
 </script>
 
 <style scoped>
