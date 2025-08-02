@@ -6,7 +6,7 @@
 
 ## 📸 Preview
 
-![Learning Profile Preview](/src/assets/input-org.gif)
+![Learning Profile Preview](/src/assets/input.gif)
 
 ---
 
