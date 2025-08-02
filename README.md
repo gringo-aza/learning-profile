@@ -48,4 +48,12 @@ This project simulates a personal learning dashboard with gamification elements,
 
 ---
 
-## 📁 Project Structure
+---
+
+## 🙏 Acknowledgments
+
+Thank you for taking the time to explore this project.  
+I hope it inspires ideas for building your own gamified learning experiences.
+
+Warm regards,  
+**Aziz Rozmetov**
