@@ -1,6 +1,9 @@
 <template>
-  <Navbar @update:filter="onFilterChange" />
-  <div class="home">
+  <header>
+    <Navbar @update:filter="onFilterChange" />
+  </header>
+
+  <main class="home">
     <UserProfile />
 
     <section class="achievements" aria-labelledby="achievements-title">
@@ -11,8 +14,11 @@
         <ProgressBar />
       </div>
     </section>
-    <ActivityList :filter="activeFilter" />
-  </div>
+
+    <section aria-label="Recent Learning Activities">
+      <ActivityList :filter="activeFilter" />
+    </section>
+  </main>
 </template>
 
 <script setup lang="ts">
@@ -28,6 +34,7 @@ function onFilterChange(value: string) {
   activeFilter.value = value;
 }
 </script>
+
 <style scoped>
 .home {
   display: flex;
